@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['id'];
 
     // Perform SQL delete in the 'form_data' table
-    $sql = "DELETE FROM form_data WHERE id=$id";
+    $sql = "DELETE FROM form_data WHERE name=$name";
 
     if ($conn->query($sql) === TRUE) {
         echo "Record deleted successfully.";
